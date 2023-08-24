@@ -37,6 +37,12 @@ header{
     pointer-events: none;
     margin-right:270px;
 }
+.logoimg{
+    width: 100px;
+    height: 80px;
+
+    
+}
 .navigation a {
     text-decoration: none;
 
