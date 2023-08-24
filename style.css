@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
 body{
     background: #ededed;
     min-height: 100vh;
     overflow-x:hidden;
+
 }
 
 header{
@@ -34,6 +36,7 @@ header{
     text-decoration: none;
 
     color: #359381;
+    
 
 
     font-weight:600px;
@@ -54,10 +57,12 @@ header{
     bottom:-10px;
     transition:0.3s;
 
+
 }
 
 .navigation a:hover:after, .navigation a.active:after {
     width:100%;
+    
 
 }
 .parallax{
@@ -73,14 +78,28 @@ header{
     position:absolute;
     font-size:6em;
     color:#fff;
+
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     text-decoration: none;
     font-weight: 600;
     transition:0.3s;
     
 }
+#text::after{
+    content:'';
+    width:0;
+    height:8px;
+    background-color:#003329;
+    margin:auto;
+    display:block;
+}
+#text:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
 #text:hover{
     font-size: 6.5em;
+    color: #1C352D;
     transition: 0.2s;
 }
 
@@ -102,12 +121,14 @@ header{
 .sec h2{
     font-size:3em;
     color:#fff;
+    color: #A9BA9D;
     margin-bottom: 10px;
     
 }
 .sec p{
     font-size:1em;
     color:#fff;
+    color: #A9BA9D;
     font-weight:300;
 }
 
@@ -124,3 +145,25 @@ header{
     background:linear-gradient(to top, #003329, transparent);
     z-index:1000;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #655d5d #c7c7c7;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #c7c7c7;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #655d5d;
+    border-radius: 0px;
+    border: 3px none #ffffff;
+  }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="journey.css">
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+
+    <title>The Journey</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Alphabots</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="journey.html" class="active">The Journey</a>
+            <a href="#">The Team</a>
+
+        </nav>
+    </header>
+    <section class="times">
+        <button id="AugB">August 2023</button>
+        <button id="SeptB">September 2023</button>
+        <button id="OctB">October 2023</button>
+        <button id="NovB">November 2023</button>
+        <button id="DecB">December 2023</button>
+    </section>
+
+
+    <section class="times-section" id="AugS">
+        <h1 class="times-header">August 2023</h1>
+        <h2 class="times-secondheader">It Begins</h2>
+        <p class="times-para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio aspernatur fugit dolore voluptatem repudiandae facere repellat iste voluptas porro eveniet aut accusantium assumenda facilis id velit eum temporibus, nisi dolorum!
+        </p>
+    </section>
+    <section class="times-section" id="SeptS">
+        <h1 class="times-header">September 2023</h1>
+        <h2 class="times-secondheader">The Innovation Project</h2>
+        <p class="times-para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, ea unde maxime dolor dolores ipsum veritatis eligendi quas maiores facere consequatur repellat provident nemo sequi sed illo soluta tempora iste?
+        </p>
+    </section>
+    <section class="times-section" id="OctS">
+        <h1 class="times-header">October 2023</h1>
+        <h2 class="times-secondheader">The Runs are Coming Together</h2>
+        <p class="times-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab qui non vitae consectetur iusto labore nobis voluptas maiores tenetur facere ad voluptates consequuntur, saepe dolorem quidem dignissimos nostrum ea. Ducimus!
+        </p>
+    </section>
+    <section class="times-section" id="NovS">
+        <h1 class="times-header">November 2023</h1>
+        <h2 class="times-secondheader">Finishing Touches</h2>
+        <p class="times-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid non autem provident ab veniam assumenda numquam nostrum dolor, deleniti labore quaerat dolorum reprehenderit itaque, obcaecati quia delectus quae maiores commodi?
+        </p>
+    </section>
+    <section class="times-section" id="DecS">
+        <h1 class="times-header">December 2023</h1>
+        <h2 class="times-secondheader">It Ends</h2>
+        <p class="times-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rem reprehenderit ad non consequuntur consequatur inventore facilis. Facere delectus doloremque explicabo quae. Necessitatibus ratione vero voluptates ea blanditiis neque ut.
+        </p>
+    </section>
+
+    <script src="journey.js"></script>
+
+</body>
+</html>

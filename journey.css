@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background: #ededed;
+    background:#2D2B55;
+    background: #004B49;
+    min-height: 100vh;
+
+
+
+}
+
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 30px 100px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index:100;
+}
+
+.logo{
+    font-size: 2em;
+    color: #359381;
+    color: white;
+    
+    pointer-events: none;
+    margin-right:270px;
+}
+.navigation a {
+    text-decoration: none;
+
+    color: #359381;
+    color:white;
+    
+    
+
+
+    font-weight:600px;
+    font-size:18px;
+    letter-spacing: 0.5px;
+    padding:0 10px;
+    position:relative;
+
+
+}
+.navigation a:after{
+    content: "";
+    position: absolute;
+    background: #ff3c78;
+    height:3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition:0.3s;
+
+
+}
+
+.navigation a:hover:after, .navigation a.active:after {
+    width:100%;
+    
+
+}
+.times{
+    margin-top:400px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    display:flex;
+    
+}
+
+.times button{
+    font-size: 16px;
+    border: 5px solid #359381;
+    border-radius: 18px;
+    transition: 0.3s;
+    font-weight: 800;
+    padding: 40px 0px 40px 0px;
+    text-decoration: none;
+    width: 250px !important;
+    height: 250px !important;
+    text-decoration: none;
+    color:#359381
+    
+    
+
+    
+    
+}
+
+.times button:hover{
+    
+    font-size: larger;
+    background: #A7c2cc;
+    transition: 0.3s;
+    color: #202A44;
+    border:6px solid #202A44;
+
+}
+
+
+.times-header{
+    font-size: 28px;
+    display:flex;
+    justify-content: center;
+    margin-top: 900px;
+    align-items: center;
+    color:#1A2421
+
+    
+}
+.times-secondheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
+    margin-top: 8px;
+    color:white;
+}
+.times-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+
+    margin-top: 40px;
+    color:azure;
+
+}
