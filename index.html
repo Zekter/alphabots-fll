@@ -7,10 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax Scrolling Website | Codehal</title>
     <link rel="stylesheet" href="style.css">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
 </head>
 
 <body>
     
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#sec1">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+
+        </nav>
+    </header>
+    <section class="parallax">
+        
+        <img src="hill1.png" id="hill1">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <h2 id="text">Our FLL Journey</h2>
+        <img src="leaf.png" id="leaf">
+        <img src="plant.png" id="plant">
+
+    </section>
+
+    <section class="sec" id="sec1">
+        <h2>About Us:</h2>
+        <p>
+            Hi! This Website was Made by the FLL Team: Alphabots. We Have Documented our Journey on Here. This could be
+            an alternative to the Engineering Notebook as its more accessible and better suited in Todays Era.<br><br>
+            akldakjldaklsjdaskjdaljk;dalj;sdjajd;aldjajdasjdj;aldjsadjsajdsajldjadj;laljdsajldaljdljad;jlajdsaj;ads
+            ajdksakjdakjdakjldsajdaslj;kdasjkldjl;kadjkasjdkasjkdaljkdaljsdjla;ksd;jlas;jdasj;dkas;jkda;jkd;ajsd;ja <br><br>
+            akldakjldaklsjdaskjdaljk;dalj;sdjajd;aldjajdasjdj;aldjsadjsajdsajldjadj;laljdsajldaljdljad;jlajdsaj;ads
+            ajdksakjdakjdakjldsajdaslj;kdasjkldjl;kadjkasjdkasjkdaljkdaljsdjla;ksd;jlas;jdasj;dkas;jkda;jkd;ajsd;ja <br><br>
+            akldakjldaklsjdaskjdaljk;dalj;sdjajd;aldjajdasjdj;aldjsadjsajdsajldjadj;laljdsajldaljdljad;jlajdsaj;ads
+            ajdksakjdakjdakjldsajdaslj;kdasjkldjl;kadjkasjdkasjkdaljkdaljsdjla;ksd;jlas;jdasj;dkas;jkda;jkd;ajsd;ja <br><br>
+            akldakjldaklsjdaskjdaljk;dalj;sdjajd;aldjajdasjdj;aldjsadjsajdsajldjadj;laljdsajldaljdljad;jlajdsaj;ads
+            ajdksakjdakjdakjldsajdaslj;kdasjkldjl;kadjkasjdkasjkdaljkdaljsdjla;ksd;jlas;jdasj;dkas;jkda;jkd;ajsd;ja <br><br>
+
+
+        </p>
+    </section>
 
     <script src="script.js"></script>
 </body>
