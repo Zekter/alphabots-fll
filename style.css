@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #f9f9f9;
+    background: #ededed;
     min-height: 100vh;
     overflow-x:hidden;
 }
@@ -55,7 +55,8 @@ header{
     transition:0.3s;
 
 }
-.navigation a:hover:after {
+
+.navigation a:hover:after, .navigation a.active:after {
     width:100%;
 
 }
@@ -73,8 +74,16 @@ header{
     font-size:6em;
     color:#fff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition:0.3s;
     
 }
+#text:hover{
+    font-size: 6.5em;
+    transition: 0.2s;
+}
+
 .parallax img{
     position: absolute;
     top:0;
