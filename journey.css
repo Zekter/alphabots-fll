@@ -79,6 +79,17 @@ header{
 
 }
 
+.time {
+    opacity: 0;
+    transform: scale(0.3);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.time.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
 
 #myBtn {
     display: none; /* Hidden by default */
@@ -104,7 +115,7 @@ header{
   }
 
 
-.memories{
+#memories {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -112,6 +123,7 @@ header{
     align-items: center;
     font-size: 16px;
     margin: 125px auto 0;
+    margin-top: 300px;
     width: 250px;
     height: 250px;
     border: 5px solid #FF4500;
@@ -119,19 +131,41 @@ header{
     font-weight: 800;
     padding: 40px 0px 40px 0px;
     color: #FF4500;
-
-    
+    transition: font-size 0.3s, background 0.3s, color 0.3s, border 0.3s; /* Add transition properties */
 }
-.memories:hover{
+
+#memories:hover {
     font-size: larger;
     background: #A7c2cc;
-    transition: 0.3s;
-    color:  #32174D;
-    border:6px solid  #32174D;
+    color: #32174D;
+    border: 6px solid #32174D;
 }
 
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    margin: 200px auto 0; /* Increase margin-top to move the text down */
+    /* ... your other styles ... */
+    color:#fff;
+    font-size: 60px;
+}
+
+.header-text {
+    position: relative;
+    opacity: 0;
+    font-size: 60px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    border-right: 2px solid black;
+}
+
+
+
+
+
 .times{
-    margin-top:400px;
+    margin-top:200px;
     position:relative;
     display:flex;
     align-items: center;
@@ -200,3 +234,25 @@ header{
     color:azure;
 
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #655d5d #c7c7c7;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #c7c7c7;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #655d5d;
+    border-radius: 0px;
+    border: 3px none #ffffff;
+  }

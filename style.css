@@ -118,11 +118,13 @@ header{
     
 }
 .sec{
+    
     position:relative;
     background:#003329;
     padding:100px;
 
 }
+
 
 .sec h2{
     font-size:3em;

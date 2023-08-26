@@ -21,6 +21,15 @@
 <body>
 
 
+	
+
+	
+
+
+
+
+
+
     <header>
         <img src="./images/fll logo main.png" class="logoimg">
         <h2 class="logo">Alphabots</h2>
@@ -40,13 +49,13 @@
 
 	<section class="team">
 		<div class="center">
-			<h1>Our Team</h1>
+			<h1 class="header-text"></h1>
 		</div>
 
 		<div class="team-content">
 			<div class="box">
 				<img src="img/01.png">
-				<h3>Ayaan Afzal</h3>
+				<h3>Muhammad Ayaan Afzal</h3>
 				<h5>Captain</h5>
 				<div class="icons">
 					<a href="#"><i class="ri-twitter-fill"></i></a>
@@ -119,10 +128,10 @@
 				</div>
 			</div>
 
-			<div class="box">
+			<div class="box" id="coach1">
 				<img src="img/03.png">
-				<h3>Annam</h3>
-				<h5>Coach</h5>
+				<h3>Annum Arif</h3>
+				<h5>Head of Innovation and Technology and The Coach</h5>
 				<div class="icons">
 					<a href="#"><i class="ri-twitter-fill"></i></a>
 					<a href="#"><i class="ri-facebook-box-fill"></i></a>
@@ -130,7 +139,7 @@
 				</div>
 			</div>
 
-			<div class="box">
+			<div class="box" id="coach2">
 				<img src="img/04.png">
 				<h3>Rabia Yaqoob</h3>
 				<h5>Coach</h5>
@@ -143,6 +152,44 @@
 
 		</div>
 	</section>
+
+
+	<script>
+		window.onload = function() {
+			var elements = document.querySelectorAll('.box');
+			elements.forEach(function(element, index) {
+				setTimeout(function() {
+					element.classList.add('show');
+				}, index * 500); // Add a longer delay for a smoother effect
+			});
+	
+			var headerText = document.querySelector('.header-text');
+			var textToType = "Our Team";
+			var speed = 100; // Typing speed in milliseconds
+			
+			function typeWriter(text, i) {
+				if (i < text.length) {
+					headerText.innerHTML += text.charAt(i);
+					i++;
+					setTimeout(function() {
+						typeWriter(text, i);
+					}, speed);
+				} else {
+					headerText.style.borderRight = 'none'; // Remove cursor effect
+				}
+			}
+			
+			headerText.style.opacity = '1'; // Make the header text visible
+			typeWriter(textToType, 0);
+		};
+	</script>
+	
+
+	
+
+
+
+
 
 </body>
 </html>

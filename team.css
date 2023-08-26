@@ -70,6 +70,27 @@ header{
 }
 
 
+
+.box {
+    opacity: 0;
+    transform: scale(0.3);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.box.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.header-text {
+    opacity: 0;
+    font-size: 80px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    border-right: 2px solid black; /* Simulates cursor blinking */
+}
+
+
 .team{
 	position: relative;
 	width: 100%;
@@ -157,4 +178,17 @@ header{
 	.center h1{
 		font-size: 3.2rem;
 	}
+}
+
+#coach1, #coach1 h3{
+	background-color:#171024;
+	color:#ff3c78;
+}
+#coach2, #coach2 h3 {
+	background-color:#171024;
+	color:#ff3c78;
+}
+#coach1 h5, #coach2 h5 {
+	color:#fff;
+	font-weight: 800;
 }
