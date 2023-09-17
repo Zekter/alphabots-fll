@@ -192,3 +192,37 @@ header{
 	color:#fff;
 	font-weight: 800;
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1b1229;
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 1;
+    }
+
+    .navigation a {
+        padding: 10px 0;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .header-text {
+        font-size: 48px;
+    }
+}
