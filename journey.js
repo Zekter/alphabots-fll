@@ -3,12 +3,16 @@ const SeptB = document.getElementById("SeptB");
 const OctB = document.getElementById("OctB");
 const NovB = document.getElementById("NovB");
 const DecB = document.getElementById("DecB");
+const JanB = document.getElementById("JanB");
+const FebB = document.getElementById("FebB");
 
 const AugS = document.getElementById("AugS");
 const SeptS = document.getElementById("SeptS");
 const OctS = document.getElementById("OctS");
 const NovS = document.getElementById("NovS");
 const DecS = document.getElementById("DecS");
+const JanS = document.getElementById("JanS");
+const FebS = document.getElementById("FebS");
 
 AugB.addEventListener("click", () => {
     AugS.scrollIntoView({ behavior: "smooth" });
@@ -29,7 +33,12 @@ NovB.addEventListener("click", () => {
 DecB.addEventListener("click", () => {
     DecS.scrollIntoView({ behavior: "smooth" });
 });
-
+JanB.addEventListener("click", () => {
+  JanS.scrollIntoView({ behavior: "smooth" });
+});
+FebB.addEventListener("click", () => {
+  FebS.scrollIntoView({ behavior: "smooth" });
+});
 
 
 

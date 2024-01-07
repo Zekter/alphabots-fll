@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="shortcut icon" href="fll.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="gallery.js"></script>
+    <title>Progress Gallery</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <img src="./images/fll logo main.png" class="logoimg">
+        <h2 class="logo">Alphabots</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="journey.html">The Journey</a>
+            <a href="team.html">The Team</a>
+        </nav>
+    </header>
+
+ 
+
+
+    <section class="gallery" id="galleryAug">
+        <!-- Images for August -->
+        <div class="gallery-item">
+            <img src="./progress imgs/img5.jpg" alt="August 1">
+            <button class="caption-button">Caption for Image 1</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./progress imgs/img2.jpg" alt="August 2">
+            <button class="caption-button">Caption for Image 2</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./progress imgs/img13.jpg" alt="August 2">
+            <button class="caption-button">Caption for Image 2</button>
+        </div>
+        <!-- Add more images for August -->
+
+        <!-- Add captions if needed -->
+    </section>
+
+    <section class="gallery" id="gallerySept">
+        <!-- Images for September -->
+        <div class="gallery-item">
+            <img src="./progress imgs/img3.jpg" alt="September 1">
+            <button class="caption-button">Caption for Image 3</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./progress imgs/img4.jpg" alt="September 2">
+            <button class="caption-button">Caption for Image 4</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./progress imgs/img1.jpg" alt="September 2">
+            <button class="caption-button">Caption for Image 5</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./progress imgs/img6.jpg" alt="September 2">
+            <button class="caption-button">Caption for Image 6</button>
+        </div>
+        
+        
+        
+        
+
+
+        <!-- Add more images for September -->
+
+        <!-- Add captions if needed -->
+    </section>
+
+    <section class="gallery" id="galleryOct">
+        <div class="gallery-item">
+            <img src="./progress imgs/img11.jpg" alt="September 2">
+            <button class="caption-button">Caption for Image 11</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./progress imgs/img12.jpg" alt="September 2">
+            <button class="caption-button">Caption for Image 12</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./progress imgs/img8.jpg" alt="September 2">
+            <button class="caption-button">Caption for Image 8</button>
+        </div>
+    </section>
+
+
+    <section class="gallery" id="galleryNov">
+        <div class="gallery-item">
+            <img src="./progress imgs/img9.jpg" alt="September 2">
+            <button class="caption-button">Caption for Image 9</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./progress imgs/img10.jpg" alt="September 2">
+            <button class="caption-button">Caption for Image 10</button>
+        </div>
+        <div class="gallery-item">
+            <img src="./progress imgs/img7.jpg" alt="September 2">
+            <button class="caption-button">Caption for Image 7</button>
+        </div>
+    </section>
+
+    <!-- Repeat the structure for other months -->
+
+    <script>
+        // ... your existing scripts ...
+
+        function scrollToMonth(monthId) {
+            const monthSection = document.getElementById(monthId);
+            monthSection.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -126,11 +126,11 @@ header{
     margin-top: 300px;
     width: 250px;
     height: 250px;
-    border: 5px solid #FF4500;
+    border: 5px solid #FF3C78;
     border-radius: 18px;
     font-weight: 800;
     padding: 40px 0px 40px 0px;
-    color: #FF4500;
+    color: #FF3C78;
     transition: font-size 0.3s, background 0.3s, color 0.3s, border 0.3s; /* Add transition properties */
 }
 
@@ -256,3 +256,7 @@ header{
     border-radius: 0px;
     border: 3px none #ffffff;
   }
+
+
+
+

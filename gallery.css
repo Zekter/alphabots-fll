@@ -1,0 +1,211 @@
+/* gallery.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #2D2B55; /* Updated background color */
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start; /* Adjusted to create space between logo and navigation */
+    align-items: center;
+    z-index: 100;
+}
+
+.header-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff; /* Updated text color */
+}
+
+.logo {
+    font-size: 2em;
+    color: #FF3C78; /* Updated logo color */
+    pointer-events: none;
+    margin-right: 10px;
+}
+
+.logoimg {
+    width: 100px;
+    height: 80px;
+}
+
+.navigation {
+    margin-left: 20%;
+}
+
+
+
+
+.navigation a {
+    text-decoration: none;
+    color: #A7c2cc; /* Updated navigation link color */
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 15px; /* Adjusted padding for better spacing */
+    position: relative;
+    
+}
+
+.navigation a:after {
+    content: "";
+    position: absolute;
+    background: #FF3C78; /* Updated link underline color */
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navigation a:hover:after,
+.navigation a.active:after {
+    width: 100%;
+}
+
+.times {
+    margin-top: 300px; /* Adjusted margin-top */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.time {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    font-size: 16px;
+    border: 5px solid #FF3C78; /* Updated button border color */
+    border-radius: 18px;
+    transition: 0.3s;
+    font-weight: 800;
+    padding: 40px 0px 40px 0px;
+    text-decoration: none;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    color: #FF3C78; /* Updated button text color */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time:hover {
+    font-size: larger;
+    background: #A7c2cc;
+    transition: 0.3s;
+    color: #32174D; /* Updated button hover text color */
+    border: 6px solid #32174D; /* Updated button hover border color */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px auto;
+    margin-top: 120px;
+}
+
+.gallery-item {
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top:150px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #FF3C78; /* Updated image border color */
+    border-radius: 10px;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Add your unique styles here */
+
+/* ... (existing styles) ... */
+
+.caption-button {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: #FF3C78; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.gallery-item:hover .caption-button {
+    opacity: 1;
+}
+
+
+/* gallery.css */
+
+/* ... (existing styles) ... */
+
+.gallery-item {
+    width: 300px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    opacity: 0;
+    transform: scale(0.5) translateY(20px); /* Set initial scale and translate */
+    animation: popOut 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Apply pop-out animation */
+}
+
+@keyframes popOut {
+    from {
+        opacity: 0;
+        transform: scale(0.5) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* ... (existing styles) ... */
+
+.caption-button {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: #FF3C78;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.gallery-item:hover .caption-button {
+    opacity: 1;
+}
