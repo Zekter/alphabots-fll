@@ -1,0 +1,144 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #004B49;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.logoimg {
+    width: 100px;
+    height: 80px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.navigation a:after {
+    content: "";
+    position: absolute;
+    background: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navigation a:hover:after,
+.navigation a.active:after {
+    width: 100%;
+}
+
+/* Innovation Page Styles */
+.innovation-section {
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+
+.innovation-section .times-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.innovation-section .times-para {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Styles for Innovation Images */
+.innovation-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.innovation-image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 10px; /* Add rounded border */
+    margin: 10px;
+    border: 2px solid #FF3C78; /* Border color for images */
+}
+
+#text{
+    position:absolute;
+    font-size:4em;
+    color:#ff3f6f;
+
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition:0.3s;
+
+    
+}
+#text {
+    text-align: center;
+    margin-top: 100px; /* Adjust the margin to move it down */
+    position: relative;
+}
+
+#text::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: #003329;
+    margin: auto;
+    display: block;
+    position: absolute;
+    bottom: -10px; /* Adjust the distance from the text */
+    left: 50%; /* Center the line */
+    transform: translateX(-50%); /* Center the line */
+}
+
+#text:hover::after {
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+#text:hover {
+    font-size: 4.5em;
+    color: #89f1d0;
+    transition: 0.2s;
+}
+
+

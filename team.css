@@ -72,9 +72,14 @@ header{
 
 
 .box {
+    
     opacity: 0;
     transform: scale(0.3);
     transition: opacity 1.5s ease, transform 1.5s ease;
+    
+    
+    
+    
 }
 
 .box.show {
@@ -88,6 +93,7 @@ header{
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflowed text */
     border-right: 2px solid black; /* Simulates cursor blinking */
+
 }
 
 
@@ -100,6 +106,7 @@ header{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+    flex-wrap: wrap;
     
 }
 .team-content{
@@ -115,10 +122,10 @@ header{
 	margin-top: 4rem;
 }
 
-.team-content > :nth-child(8),
-.team-content > :nth-child(9) {
-  grid-row: 2;
-  grid-column: span 3; /* Span 2 columns to center them */
+.team-content > :nth-child(9),
+.team-content > :nth-child(10) {
+  grid-row: 3;
+  grid-column: span 4; /* Span 2 columns to center them */
   justify-self: center;
   
 }
@@ -138,7 +145,7 @@ header{
 	background: #1b1229;
 	border-radius: 15px;
 	transition: all .38s ease;
-    width: 100%;
+    width: 95%;
     max-width: 300px;
 }
 .box h3{
@@ -225,4 +232,12 @@ header{
     .header-text {
         font-size: 48px;
     }
+}
+
+.box h3 {
+    font-size: 18px; /* Decrease font size for names */
+}
+
+.box h5 {
+    font-size: 12px; /* Decrease font size for roles */
 }

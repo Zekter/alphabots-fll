@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating Legos Background</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #2ecc71; /* Green background color */
+    }
+
+    .lego {
+      position: absolute;
+      width: 30px;
+      height: 15px;
+      background-color: #f1c40f; /* Lego color */
+      border: 1px solid #b7950b; /* Lego border color */
+      border-radius: 5px;
+      transform-origin: bottom center;
+      animation: floatAnimation 2s infinite alternate-reverse;
+    }
+
+    @keyframes floatAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const legoContainer = document.body;
+      const legoCount = 50;
+
+      for (let i = 0; i < legoCount; i++) {
+        createLego();
+      }
+
+      function createLego() {
+        const lego = document.createElement("div");
+        lego.className = "lego";
+
+        lego.style.left = `${Math.random() * window.innerWidth}px`;
+
+        legoContainer.appendChild(lego);
+
+        lego.addEventListener("animationiteration", () => {
+          lego.style.left = `${Math.random() * window.innerWidth}px`;
+        });
+      }
+    });
+  </script>
+</body>
+</html>

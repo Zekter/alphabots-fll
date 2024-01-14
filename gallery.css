@@ -10,7 +10,7 @@
 }
 
 body {
-    background: #2D2B55; /* Updated background color */
+    background: #004B49; /* Updated background color */
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -36,7 +36,7 @@ header {
 
 .logo {
     font-size: 2em;
-    color: #FF3C78; /* Updated logo color */
+    color: white; /* Updated logo color */
     pointer-events: none;
     margin-right: 10px;
 }
@@ -55,7 +55,7 @@ header {
 
 .navigation a {
     text-decoration: none;
-    color: #A7c2cc; /* Updated navigation link color */
+    color: white; /* Updated navigation link color */
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 0.5px;
@@ -136,7 +136,7 @@ header {
 .gallery-item img {
     width: 100%;
     height: auto;
-    border: 5px solid #FF3C78; /* Updated image border color */
+    border: 5px solid #B19470; /* Updated image border color */
     border-radius: 10px;
 }
 

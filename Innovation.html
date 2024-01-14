@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Innovation.css">
+    <link rel="shortcut icon" href="fll.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Innovation</title>
+</head>
+<body>
+
+    <header>
+        <img src="./images/fll logo main.png" class="logoimg">
+        <h2 class="logo">Alphabots</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="journey.html">The Journey</a>
+            <a href="innovation.html" class="active">Innovation</a>
+            <a href="team.html">The Team</a>
+            
+        </nav>
+    </header>
+
+    <!-- The Innovation Project Section -->
+    <section class="innovation-section">
+        <h1 class="times-header">The Innovation Project</h1>
+        <div class="innovation-content">
+            <div class="innovation-para">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In rerum culpa illum suscipit voluptates? Distinctio voluptas quasi ut dignissimos placeat esse similique! Veniam impedit illo eius deserunt nulla molestias vero.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Channel Link Section -->
+    <section class="innovation-section youtube-section">
+        <h1 class="times-header">The Podcast</h1>
+        <p class="times-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores, rerum at quisquam perferendis enim adipisci accusantium numquam quibusdam ad nihil porro odio vero expedita facilis sapiente doloribus dignissimos libero.
+        </p>
+        <!-- Add YouTube channel link here -->
+        
+    </section>
+
+    <a href="https://www.youtube.com" id="text" target="_blank">The Podcast</a>
+
+
+    <script src="journey.js"></script>
+
+    <script>
+        window.onload = function() {
+            // Animation for '.box' elements
+            var elements = document.querySelectorAll('.time');
+            elements.forEach(function(element, index) {
+                setTimeout(function() {
+                    element.classList.add('show');
+                }, index * 500);
+    
+                // Typing animation for header text
+                var headerText = document.querySelector('.header-text');
+                var textToType = "Innovation Page!";
+                var speed = 100;
+    
+                function typeWriter(text, i) {
+                    if (i < text.length) {
+                        headerText.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(function() {
+                            typeWriter(text, i);
+                        }, speed);
+                    } else {
+                        headerText.style.borderRight = 'none';
+                    }
+                }
+    
+                headerText.style.opacity = '1';
+                typeWriter(textToType, 0);
+            });
+        };
+    </script>
+</body>
+</html>
