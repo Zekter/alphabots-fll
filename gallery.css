@@ -47,7 +47,7 @@ header {
 }
 
 .navigation {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 
@@ -131,6 +131,7 @@ header {
     width: 300px;
     margin-bottom: 20px;
     margin-top:150px;
+    z-index: 1;
 }
 
 .gallery-item img {
@@ -209,3 +210,66 @@ header {
 .gallery-item:hover .caption-button {
     opacity: 1;
 }
+
+
+
+
+.lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%; /* Updated to cover the entire height of the document */
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%; /* Updated to cover the entire height of the line */
+    width: 100%;
+    top: -100%; /* Updated to start from above the viewport */
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    animation: drop 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.line:nth-child(1) {
+    margin-left: -25%;
+}
+
+.line:nth-child(1)::after {
+    animation-delay: 2s;
+}
+
+.line:nth-child(3) {
+    margin-left: 25%;
+}
+
+.line:nth-child(3)::after {
+    animation-delay: 2.5s;
+}
+
+@keyframes drop {
+    0% {
+        top: -100%; /* Updated to start from above the viewport */
+    }
+    100% {
+        top: 110%; /* Updated to extend beyond the viewport */
+    }
+}
+

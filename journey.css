@@ -39,7 +39,7 @@ header{
     color: white;
     
     pointer-events: none;
-    margin-right:270px;
+    margin-right:200px;
 }
 .logoimg{
     width: 100px;
@@ -136,6 +136,7 @@ header{
     padding: 40px 0px 40px 0px;
     color: #FF3C78;
     transition: font-size 0.3s, background 0.3s, color 0.3s, border 0.3s; /* Add transition properties */
+    z-index: 1;
     
 }
 
@@ -196,7 +197,7 @@ header{
     color: #B19470;
     margin-bottom: 20px;
     margin-right: 25px;
-    
+    z-index: 1;
     
 
     
@@ -270,4 +271,67 @@ header{
 
 
 
+
+
+
+
+
+    .lines {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%; /* Updated to cover the entire height of the document */
+      margin: 0 auto;
+      width: 90vw;
+  }
+  
+  .line {
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+  }
+  
+  .line::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%; /* Updated to cover the entire height of the line */
+      width: 100%;
+      top: -100%; /* Updated to start from above the viewport */
+      left: 0;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+      animation: drop 7s 0s infinite;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+  
+  .line:nth-child(1) {
+      margin-left: -25%;
+  }
+  
+  .line:nth-child(1)::after {
+      animation-delay: 2s;
+  }
+  
+  .line:nth-child(3) {
+      margin-left: 25%;
+  }
+  
+  .line:nth-child(3)::after {
+      animation-delay: 2.5s;
+  }
+  
+  @keyframes drop {
+      0% {
+          top: -100%; /* Updated to start from above the viewport */
+      }
+      100% {
+          top: 110%; /* Updated to extend beyond the viewport */
+      }
+  }
   
