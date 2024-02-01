@@ -118,6 +118,7 @@ header {
     margin-top: 100px; /* Adjust the margin to move it down */
     position: relative;
     margin-bottom: 50px;
+    z-index: 3;
 }
 
 #text::after {
@@ -147,6 +148,7 @@ header {
 
 
 .lines {
+    z-index: 2;
     position: absolute;
     top: 0;
     left: 0;
@@ -190,3 +192,9 @@ header {
     100% {
       top: 110%; } }
   
+
+
+
+
+
+

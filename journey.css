@@ -2,7 +2,14 @@
 
 
 
+@font-face {
+    font-family: 'thefotosintesisregular';
+    src: url('thefotosintesis-1gjae-webfont.woff2') format('woff2'),
+         url('thefotosintesis-1gjae-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 * {
     margin: 0;
@@ -123,20 +130,21 @@ header{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 16px;
     margin: 125px auto 0;
     margin-top: 145px;
     width: 200px;
     height: 150px;
-    border: 5px solid #FF3C78;
+    border: 5px solid #9DBC98;
     border-radius: 18px;
     font-weight: 800;
     padding: 40px 0px 40px 0px;
-    color: #FF3C78;
+    color: #9DBC98;
     transition: font-size 0.3s, background 0.3s, color 0.3s, border 0.3s; /* Add transition properties */
     z-index: 1;
+
     
 }
 
@@ -160,7 +168,7 @@ header{
 .header-text {
     position: relative;
     opacity: 0;
-    font-size: 60px;
+    font-size: 75px;
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflowed text */
     border-right: 2px solid black;
@@ -216,12 +224,12 @@ header{
 
 
 .times-header{
-    font-size: 28px;
+    font-size: 45px;
     display:flex;
     justify-content: center;
     margin-top: 900px;
     align-items: center;
-    color:#1A2421
+    color:#B19470
 
     
 }
@@ -229,19 +237,21 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:18px;
+    font-size: 27px;
     margin-top: 8px;
     color:white;
 }
 .times-para{
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     text-align: center;
-    font-size: 18px;
-
+    font-size: 25px;
+    margin-left: 85px;
+    margin-right: 85px;
     margin-top: 40px;
     color:azure;
+    justify-content: center;
 
 }
 
@@ -335,3 +345,7 @@ header{
       }
   }
   
+
+.ecodome plant font{
+    font: thefotosintesisregular;
+}
