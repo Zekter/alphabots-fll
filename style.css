@@ -7,6 +7,16 @@
     font-family: 'Poppins', sans-serif;
 
 }
+
+@font-face {
+    font-family: 'Dalek';
+    src: url('Dalek.woff2') format('woff2'),
+        url('Dalek.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body{
     background: #ededed;
     min-height: 100vh;
@@ -81,6 +91,7 @@ header{
 }
 
 #text{
+    font-family: Dalek;
     position:absolute;
     font-size:6em;
     color:#fff;

@@ -1,4 +1,72 @@
 /* Global Styles */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+@font-face {
+    font-family: 'Ubuntu-Title';
+    src: url('Ubuntu-Title.woff2') format('woff2'),
+        url('Ubuntu-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Ubuntu-Title';
+    src: url('Ubuntu-Title.woff2') format('woff2'),
+        url('Ubuntu-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Heorot';
+    src: url('Heorot.woff2') format('woff2'),
+        url('Heorot.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dalek';
+    src: url('Dalek.woff2') format('woff2'),
+        url('Dalek.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Nautica Rounded';
+    src: url('NauticaRounded-Bold.woff2') format('woff2'),
+        url('NauticaRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenueX';
+    src: url('AvenueX-Regular.woff2') format('woff2'),
+        url('AvenueX-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'moderna';
+    src: url('Moderna.woff2') format('woff2'),
+        url('Moderna.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -69,21 +137,36 @@ header {
 
 /* Innovation Page Styles */
 .innovation-section {
+
     margin: 40px auto;
     text-align: center;
     color: white;
+    
 }
 
 .innovation-section .times-header {
-    font-size: 28px;
+    font-family: Moderna;
+    font-size: 34px;
     margin-bottom: 20px;
     margin-top: 150px;
 }
 
 .innovation-section .times-para {
-    font-size: 18px;
+    font-family: Nautica Rounded;
+    font-size: 27px;
     margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
 }
+.innovation-para{
+    font-family: Nautica Rounded;
+    font-size: 27px;
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+
 
 /* Styles for Innovation Images */
 .innovation-images {
@@ -101,7 +184,35 @@ header {
     border: 2px solid #FF3C78; /* Border color for images */
 }
 
+@font-face {
+    font-family: 'Heorot';
+    src: url('Heorot.woff2') format('woff2'),
+        url('Heorot.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dalek';
+    src: url('Dalek.woff2') format('woff2'),
+        url('Dalek.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dyonisius';
+    src: url('Dyonisius.woff2') format('woff2'),
+        url('Dyonisius.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 #text{
+    font-family: Dalek;
     position:absolute;
     font-size:4em;
     color:#ff3f6f;
@@ -144,7 +255,9 @@ header {
     color: #89f1d0;
     transition: 0.2s;
 }
-
+p{
+    font-family: Nautica Rounded;
+}
 
 
 .lines {
@@ -197,4 +310,16 @@ header {
 
 
 
+
+.times-header{
+    color: #B19470;
+    
+        
+}
+    
+
+.times-para, .innovation-para{
+    font-family: Nautica Rounded;
+    text-transform: capitalize;
+}
 

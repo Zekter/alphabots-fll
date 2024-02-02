@@ -1,15 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@font-face {
+    font-family: 'Ubuntu-Title';
+    src: url('Ubuntu-Title.woff2') format('woff2'),
+        url('Ubuntu-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dunkin';
+    src: url('Dunkin.woff2') format('woff2'),
+        url('Dunkin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'moderna';
+    src: url('Moderna.woff2') format('woff2'),
+        url('Moderna.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 @font-face {
-    font-family: 'thefotosintesisregular';
-    src: url('thefotosintesis-1gjae-webfont.woff2') format('woff2'),
-         url('thefotosintesis-1gjae-webfont.woff') format('woff');
+    font-family: 'Heorot';
+    src: url('Heorot.woff2') format('woff2'),
+        url('Heorot.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Dalek';
+    src: url('Dalek.woff2') format('woff2'),
+        url('Dalek.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dyonisius';
+    src: url('Dyonisius.woff2') format('woff2'),
+        url('Dyonisius.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Janda Safe and Sound';
+    src: url('JandaSafeandSound.woff2') format('woff2'),
+        url('JandaSafeandSound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Olympus';
+    src: url('OlympusBold.woff2') format('woff2'),
+        url('OlympusBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'DK High Tea';
+    src: url('DKHighTea.woff2') format('woff2'),
+        url('DKHighTea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenueX';
+    src: url('AvenueX-Regular.woff2') format('woff2'),
+        url('AvenueX-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Black Ground';
+    src: url('BlackGround.woff2') format('woff2'),
+        url('BlackGround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nautica Rounded';
+    src: url('NauticaRounded-Bold.woff2') format('woff2'),
+        url('NauticaRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 
 * {
     margin: 0;
@@ -127,12 +235,13 @@ header{
 
 
 #memories {
+    font-family: Nautica Rounded;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-size: 16px;
+    font-size: 22px;
     margin: 125px auto 0;
     margin-top: 145px;
     width: 200px;
@@ -191,7 +300,8 @@ header{
 }
 
 .times button{
-    font-size: 16px;
+    font-family: Nautica Rounded;
+    font-size: 22px;
     background-color: #F8FAE5;
     border: 5px solid #B19470;
     border-radius: 18px;
@@ -214,7 +324,7 @@ header{
 
 .times button:hover{
     
-    font-size: 20px;
+    font-size: 24px;
     background: #A7c2cc;
     transition: 0.3s;
     color: #202A44;
@@ -224,12 +334,15 @@ header{
 
 
 .times-header{
+    font-family: AvenueX;
     font-size: 45px;
     display:flex;
     justify-content: center;
     margin-top: 900px;
     align-items: center;
     color:#B19470
+    
+
 
     
 }
@@ -246,12 +359,16 @@ header{
     
     align-items: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 85px;
     margin-right: 85px;
     margin-top: 40px;
     color:azure;
     justify-content: center;
+    font-family: Nautica Rounded;
+
+
+    
 
 }
 
